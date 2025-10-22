@@ -8,11 +8,17 @@ function getQueryquestion() {
         const query = inputRef.value;
         const res = axios.post("https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent",
             {
-    "contents": [
+    contents: [
       {
-        "parts": [
+        parts: [
           {
-            text: `User query: ${query}`,
+            text: `you are an expert in graphic designing, having years of knowledge..you have to ans the user query as per  your knowlege if query is not from web development domain error than refused to answer.
+            `,
+          },
+          {
+            text: `User query: ${query}
+            maximum 100 hunderd answer.`
+            ,
           }
         ]
       }

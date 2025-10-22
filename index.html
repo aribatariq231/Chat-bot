@@ -1,19 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        h1 {
+            color: #d66969;
+            background-color: #eaecec;
+            font-size: 44px;
+            font-family: "Montserrat", sansserif;
+            font-optical-sizing: auto;
+            font-weight: 300;
+            font-style: normal;
+            text-decoration: underline;
+            font-style: italic;
+        }
+    </style>
 </head>
+
 <body>
     <h1>Chatbot</h1>
     <form action="" onsubmit="getQueryquestion(); return false">
         <input type="text" name="query" id="query" placeholder="Query Question">
         <button type="submit">Get</button>
-    </form>
+    </form> <br>
     <div id="answer"></div>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
     <script src="./index.js"></script>
 </body>
+
 </html>
